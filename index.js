@@ -5,7 +5,7 @@ exports.handler = async (event) => {
     const { peso, altura } = parameters;
 
     // Cálculo do IMC
-    const imc = // Cálculo do IMC com base no peso e altura
+    const imc = (altura*altura)/peso
 
     const response = {
       fulfillmentText: `Seu IMC é ${imc}.`,
